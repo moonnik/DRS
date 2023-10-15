@@ -1,0 +1,32 @@
+export interface IListService {
+    GetItemsByListTitle: (listTitle: string, selectFields: string, filter: string, expand: string, orderBy: string, orderByDir: boolean) => Promise<any>;
+    GetItemsByListId: (listId: string, selectFields: string, categoryFilter: string, expand: string, orderBy: string, orderByDir: boolean, top?: number) => Promise<any>;
+    DeleteItemById: (listTitle: string, itemId: number) => Promise<any>;
+    GetFieldsByListTitle: (listTitle: string, selectFields: string, filter: string, expand: string, orderBy: string, orderByDir: boolean) => Promise<any>;
+    GetFieldsByListId: (listId: string, selectFields: string, filter: string, expand: string, orderBy: string, orderByDir: boolean) => Promise<any>;
+    GetAllLists: (selectFields: string, filter: string, expand: string, orderBy: string, orderByDir: boolean) => Promise<any>;
+    GetLatestItemId: (listTitle: string) => Promise<any>;
+    UpdateListItem: (listName: string, listitems: any, listId: number) => Promise<any>;
+    UpdateListItemByTitle: (listName: string, listitems: any, listId: number) => Promise<any>;
+    CreateListItem: (listName: string, items: any) => Promise<any>;
+    AddListAttachments: (listId: string, itemId: number, attachmentItems: any) => Promise<any>;
+    AddMultipleTransactionItems: (listId: string, items: any, jvRequestId: string, ID: number, Year: string) => Promise<any>;
+    DeleteListAttachments: (listId: string, itemId: number, fileList: any) => Promise<any>;
+    GetListItembyItemId: (listTitle: string, ItemId: number, selectFields: string, expand: string) => Promise<any>;
+    GetItemsByListIdAndFolder: (listId: string, folderName: string) => Promise<any>;
+    UpdateMultipleTransactionItems: (listId: string, items: any, IsDelete: boolean) => Promise<any>;
+    AddMultipleTransactionItemsForEdit: (listId: string, items: any) => Promise<any>;
+    GetUserID: (email: string) => Promise<any>;
+    AddMultipleItems: (listId: string, items: any) => Promise<any>;
+    FileUploadtoLibrary: (serverRelativeURL: string, file: any) => Promise<any>;
+    GetListDetailsbyID: (listId: string, select: string, expand: string) => Promise<any>;
+    GetFileBuffer: (fileURL: string) => Promise<any>;
+    CreateFolder: (libName: string, folderName: string) => Promise<any>;
+    UploadFiletoLibrary: (serverrelativeURL: string, fileData: any) => Promise<any>;
+    CopyFiletoLibrary: (srcPath: string, destPath: string, name: string) => Promise<any>;
+    DeleteFile: (serverrelativeURL: string) => Promise<any>;
+    GetFilesfromFolder: (serverrelativeURL: string) => Promise<any>;
+    GetFileMetadata: (Name: string, serverrelativeURL: string) => Promise<any>;
+    GetOtherSiteItemsByListId: (siteURL: string, listId: string, selectFields: string, categoryFilter: string, expand: string, orderBy: string, orderByDir: boolean, top?: number) => Promise<any>;
+    GetfileFromLibrary: (folderPath:string,select:string,filter:string) => Promise<any>;
+}

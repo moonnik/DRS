@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "drs-template-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/drsTemplate/DrsTemplateWebPart.js",
+          "manifest": "./src/webparts/drsTemplate/DrsTemplateWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DrsTemplateWebPartStrings": "lib/webparts/drsTemplate/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,150 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.drsTemplate {
+  border-bottom: 2px solid #ce1b0e;
+
+  .container {
+    max-width: inherit;
+    margin: 0px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    //background-color: #2f74bb; // #ce1b0e; // $ms-color-themeDark;
+    padding: 20px;
+    margin: 0px;
+    min-height: 100px;
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+        #004C92,
+        #00A6EB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+        #004C92,
+        #00A6EB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .header {
+    display: -webkit-box;
+    font-size: 30px;
+    float: left;
+    /* vertical-align: middle; */
+    margin-top: 5px;
+    font-family: inherit;
+  }
+
+  .buttonTop {
+    margin-top: 5px;
+    float: right;
+  }
+
+  .Mui-disabled {
+    color: #708090 !important;
+  }
+
+  .header h1 {
+    flex-grow: 1;
+  }
+
+  .styleh1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  .head Button {
+    margin-left: 20px;
+  }
+
+  .columnTitle {
+    float: right;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system,
+      BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+}
+
+.container {
+
+
+  background: #DEE1E1;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #DEE1E1);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #eef2f3,
+      #DEE1E1);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ButtonMain {
+  color: white !important;
+  background-color: #172777 !important;
+}
+
+.ButtonMain:disabled {
+  /* Increase the specificity */
+  color: slategray !important;
+}
